@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TravisTwo</string>
+    <string name="image_content_description">null</string>
+    <string name="preferences_app_list_menu">Preferences</string>
+    <string name="about_app_list_menu">About</string>
+    <string name="preferences_app_text_size_summery">Change the text size in app list</string>
+    <string name="preferences_app_text_size_title">Text Size</string>
+    <string name="preferences_app_text_size_key">textSizeForAppList_preferences</string>
+    <string name="email_subject_hint">email subject</string>
+    <string name="email_body_hint">Email Body</string>
+    <string name="enter_email_hint">Enter Email Address</string>
+    <string name="send_email_button">Send Email</string>
+    <string name="button_wallpaper">Set Wallpaper</string>
+    <string name="about_us">This is a example app. \nthis is from travis tutorial</string>
+    <string name="exit_app_list_menu">Exit</string>
+    <string name="music_preferences_summery">Turn on/off Opening Music</string>
+    <string name="music_preferences_key">openingMusic_preferences</string>
+    <string name="app_title_preferences_key">appTitleBar_preferences</string>
+    <string name="title_bar_preferences_summery">Set The Title on the Title Bar</string>
+</resources>

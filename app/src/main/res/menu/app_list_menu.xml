@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/preferences_appListMenu"
+        android:title="@string/preferences_app_list_menu">
+    </item>
+    <item
+        android:title="@string/about_app_list_menu"
+        android:id="@+id/about_appListMenu">
+    </item>
+
+    <item
+        android:title="@string/exit_app_list_menu"
+        android:id="@+id/exitApp_appListMenu">
+    </item>
+</menu>

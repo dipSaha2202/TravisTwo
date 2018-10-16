@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SharedAndInternal">
+
+    <EditText
+        android:id="@+id/edtSaveShared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Name" />
+
+    <Button
+        android:onClick="saveToShared"
+        android:id="@+id/btnSaveShared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Save" />
+
+    <Button
+        android:onClick="loadFromSaved"
+        android:id="@+id/btnLoadShared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Load" />
+
+    <Button
+        android:onClick="saveToInternal"
+        android:id="@+id/btnSaveInternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save in Internal Storage" />
+
+    <Button
+        android:onClick="loadFromInternal"
+        android:id="@+id/btnLoadInternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load From Internal" />
+</LinearLayout>

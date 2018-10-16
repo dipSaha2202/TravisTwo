@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twotwotwo.dip.travistwo">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBarTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppMenu"
+            android:theme="@style/AppMenuTheme">
+            <intent-filter>
+                <action android:name="com.twotwotwo.dip.APPMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:theme="@style/AboutUsTheme" />
+        <activity
+            android:name=".PreferencesApp"
+            android:theme="@style/PreferenceTheme" />
+        <activity android:name=".BasicGraphics" />
+        <activity android:name=".SurfaceGraphicsBasic" />
+        <activity android:name=".SoundView" />
+        <activity android:name=".Sliding" />
+        <activity android:name=".Flipper" />
+        <activity android:name=".SharedAndInternal"></activity>
+    </application>
+
+</manifest>
