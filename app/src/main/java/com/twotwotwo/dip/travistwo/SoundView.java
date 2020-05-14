@@ -23,8 +23,7 @@ public class SoundView extends AppCompatActivity implements View.OnClickListener
 
         soundPool = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
         explosion = soundPool.load(this, R.raw.explosion, 1);
-
-         player = MediaPlayer.create(this, R.raw.splash_sound);
+        player = MediaPlayer.create(this, R.raw.splash_sound);
     }
 
     @Override

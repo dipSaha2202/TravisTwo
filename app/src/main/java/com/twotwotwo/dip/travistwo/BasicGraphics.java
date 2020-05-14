@@ -25,14 +25,12 @@ public class BasicGraphics extends AppCompatActivity {
     private class CustomViewForBasicGraphics extends View {
         Bitmap greenBall;
         float changingY = 0;
-        Paint rectPaint;
         Paint textPaint;
         Typeface typefaceOne;
 
         public CustomViewForBasicGraphics(Context context) {
             super(context);
             greenBall = BitmapFactory.decodeResource(getResources(), R.drawable.green_button);
-            rectPaint = new Paint();
             textPaint = new Paint();
             typefaceOne = Typeface.createFromAsset(context.getAssets(), "fonts/Buitenzorg.otf");
         }
@@ -45,21 +43,22 @@ public class BasicGraphics extends AppCompatActivity {
             textPaint.setTypeface(typefaceOne);
             textPaint.setTextAlign(Paint.Align.CENTER);
             textPaint.setTextSize(80);
-            textPaint.setARGB(255, 200, 100, 50);
-            canvas.drawText("This is Canvas", (float) getWidth() / 2,
-                    (float) getHeight() / 2 - 200, textPaint);
+            textPaint.setARGB(255, 250, 100, 50);
+            canvas.drawText(
+                    "This is Canvas",
+                    (float) getWidth() / 2, (float) getHeight() / 2 - 200,
+                    textPaint);
 
-            canvas.drawBitmap(greenBall, ((float) getWidth() - greenBall.getWidth()) / 2,
-                    changingY, null);
+            canvas.drawBitmap(greenBall,
+                    ((float) getWidth() - greenBall.getWidth()) / 2,
+                    changingY,
+                    null);
+
             if (changingY < (float) getHeight()) {
                 changingY += 4;
             } else {
                 changingY = 0;
             }
-
-            rectPaint.setColor(Color.BLUE);
-            canvas.drawRect(0, 600, getWidth(), 800, rectPaint);
-
             invalidate();
         }
     }

@@ -37,17 +37,14 @@ public class Sliding extends AppCompatActivity implements
     public void onDrawerOpened() {
         MediaPlayer player = MediaPlayer.create(Sliding.this, R.raw.explosion);
         player.start();
-
     }
 
     public void openDrawer(View view) {
         drawer.open();
     }
-
     public void toggleDrawer(View view) {
         drawer.toggle();
     }
-
     public void closeDrawer(View view) {
         drawer.close();
     }
