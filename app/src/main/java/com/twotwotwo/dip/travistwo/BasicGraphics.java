@@ -17,16 +17,17 @@ public class BasicGraphics extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         graphics = new CustomViewForBasicGraphics(BasicGraphics.this);
         setContentView(graphics);
     }
 
     private class CustomViewForBasicGraphics extends View {
-        Bitmap greenBall, redBall;
+        Bitmap greenBall;
         float changingY = 0;
         Paint rectPaint;
         Paint textPaint;
-        Typeface typefaceOne, typefaceTwo, typefaceThree;
+        Typeface typefaceOne;
 
         public CustomViewForBasicGraphics(Context context) {
             super(context);
@@ -34,8 +35,6 @@ public class BasicGraphics extends AppCompatActivity {
             rectPaint = new Paint();
             textPaint = new Paint();
             typefaceOne = Typeface.createFromAsset(context.getAssets(), "fonts/Buitenzorg.otf");
-            typefaceTwo = Typeface.createFromAsset(context.getAssets(), "fonts/Mercy.ttf");
-            typefaceThree = Typeface.createFromAsset(context.getAssets(), "fonts/Snicker_Snack.otf");
         }
 
         @Override
@@ -47,12 +46,12 @@ public class BasicGraphics extends AppCompatActivity {
             textPaint.setTextAlign(Paint.Align.CENTER);
             textPaint.setTextSize(80);
             textPaint.setARGB(255, 200, 100, 50);
-            canvas.drawText("This is Canvas", canvas.getWidth()/2,
-                        canvas.getHeight() / 2 - 200, textPaint );
+            canvas.drawText("This is Canvas", (float) getWidth() / 2,
+                    (float) getHeight() / 2 - 200, textPaint);
 
-            canvas.drawBitmap(greenBall, (canvas.getWidth() - greenBall.getWidth()) / 2,
+            canvas.drawBitmap(greenBall, ((float) getWidth() - greenBall.getWidth()) / 2,
                     changingY, null);
-            if(changingY < canvas.getHeight()){
+            if (changingY < (float) getHeight()) {
                 changingY += 4;
             } else {
                 changingY = 0;
