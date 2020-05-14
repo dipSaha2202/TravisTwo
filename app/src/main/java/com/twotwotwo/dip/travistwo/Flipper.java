@@ -19,10 +19,8 @@ public class Flipper extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.viewFlipper:
-                flipper.showNext();
-                break;
+        if (v.getId() == R.id.viewFlipper) {
+            flipper.showNext();
         }
     }
 }

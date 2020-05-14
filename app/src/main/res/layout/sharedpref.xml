@@ -19,22 +19,6 @@
         android:text="Name" />
 
     <Button
-        android:onClick="saveToShared"
-        android:id="@+id/btnSaveShared"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Save" />
-
-    <Button
-        android:onClick="loadFromSaved"
-        android:id="@+id/btnLoadShared"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Load" />
-
-    <Button
         android:onClick="saveToInternal"
         android:id="@+id/btnSaveInternal"
         android:layout_width="match_parent"

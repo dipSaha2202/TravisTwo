@@ -63,15 +63,10 @@ public class AppMenu extends ListActivity {
     @Override
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
         switch (item.getItemId()){
-            case R.id.about_appListMenu:
-                aboutIntent = new Intent(AppMenu.this, AboutUs.class);
-                startActivity(aboutIntent);
-                break;
             case R.id.preferences_appListMenu:
                 preferencesIntent = new Intent(AppMenu.this, PreferencesApp.class);
                 startActivity(preferencesIntent);
                 break;
-
             case R.id.exitApp_appListMenu:
                 finish();
                 break;

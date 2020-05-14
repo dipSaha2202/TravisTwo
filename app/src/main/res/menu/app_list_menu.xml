@@ -4,10 +4,6 @@
         android:id="@+id/preferences_appListMenu"
         android:title="@string/preferences_app_list_menu">
     </item>
-    <item
-        android:title="@string/about_app_list_menu"
-        android:id="@+id/about_appListMenu">
-    </item>
 
     <item
         android:title="@string/exit_app_list_menu"

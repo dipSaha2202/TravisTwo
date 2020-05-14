@@ -14,7 +14,6 @@
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -23,13 +22,9 @@
             android:theme="@style/AppMenuTheme">
             <intent-filter>
                 <action android:name="com.twotwotwo.dip.APPMENU" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AboutUs"
-            android:theme="@style/AboutUsTheme" />
         <activity
             android:name=".PreferencesApp"
             android:theme="@style/PreferenceTheme" />
@@ -38,7 +33,7 @@
         <activity android:name=".SoundView" />
         <activity android:name=".Sliding" />
         <activity android:name=".Flipper" />
-        <activity android:name=".SharedAndInternal"></activity>
+        <activity android:name=".SharedAndInternal" />
     </application>
 
 </manifest>
